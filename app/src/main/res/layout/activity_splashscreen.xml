@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_awal"
+    tools:context=".SplashscreenActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_logout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="50dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="167dp"
+            android:layout_height="179dp"
+            android:src="@drawable/logo_kemd" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoeuib"
+            android:gravity="center"
+            android:text="SIMPAN"
+            android:textColor="@color/white"
+            android:textSize="35dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:fontFamily="@font/segoeui"
+            android:text="Sistem Informasi Manajemen"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:fontFamily="@font/segoeui"
+            android:text="Kepegawaian Terintegrasi Berbasis Android"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:fontFamily="@font/segoeui"
+            android:text="PPPPTK DAN PLB"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

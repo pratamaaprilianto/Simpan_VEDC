@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detail.Pp53DisiplinPnsActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:background="@drawable/b_atasinfo"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="25dp">
+
+                        <Button
+                            android:id="@+id/bt_kembaliuangmakan"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/ic_back"></Button>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeuib"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="110dp"
+                            android:text="PP 53 Kurang Jam Kerja"
+                            android:textColor="@color/white"
+                            android:textSize="24dp"></TextView>
+                </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="235dp"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/segoeuib"
+                            android:paddingLeft="60dp"
+                            android:paddingTop="20dp"
+                            android:text="Pilih Bulan"
+                            android:textColor="@color/blue"
+                            android:textSize="20dp"></TextView>
+
+                        <Spinner
+                            android:id="@+id/spin_bulanrekap"
+                            android:layout_width="190dp"
+                            android:layout_height="50dp"
+                            android:entries="@array/bulan"
+                            android:paddingTop="25dp"></Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/segoeuib"
+                            android:paddingLeft="60dp"
+                            android:paddingTop="20dp"
+                            android:text="Pilih Tahun"
+                            android:textColor="@color/blue"
+                            android:textSize="20dp"></TextView>
+
+                        <Spinner
+                            android:id="@+id/spin_tahunrekap"
+                            android:layout_width="190dp"
+                            android:layout_height="60dp"
+                            android:entries="@array/tahun"
+                            android:paddingTop="25dp"></Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp">
+
+                        <LinearLayout
+                            android:layout_width="400dp"
+                            android:layout_height="160dp"
+                            android:background="@drawable/info_pp53kurangjam"
+                            android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_jumlahterlambat"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/segoeuib"
+                                    android:paddingLeft="300dp"
+                                    android:paddingTop="15dp"
+                                    android:text="00:28:29"
+                                    android:textColor="@color/white"></TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_jumlahpsw"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/segoeuib"
+                                    android:paddingLeft="300dp"
+                                    android:paddingTop="25dp"
+                                    android:text="00:28:29"
+                                    android:textColor="@color/white"></TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_toalkurangjam"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/segoeuib"
+                                    android:paddingLeft="315dp"
+                                    android:paddingTop="27dp"
+                                    android:text="40"
+                                    android:textColor="@color/white"></TextView>
+                        </LinearLayout>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
