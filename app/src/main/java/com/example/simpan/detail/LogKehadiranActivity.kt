@@ -2,6 +2,7 @@ package com.example.simpan.detail
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.simpan.R
 import com.example.simpan.adapter.adapterLogKehadiran
@@ -15,6 +16,13 @@ class LogKehadiranActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_log_kehadiran)
+
+        val button_kembali = findViewById<Button>(R.id.bt_kembalilog)
+
+
+        button_kembali.setOnClickListener{
+            onBackPressed()
+        }
 
         val listModel = listOf<model_logkehadiran>(
             model_logkehadiran(tanggal = "01/01/2020",jenis = "M",hari="Senin",datang = "07.43.45",

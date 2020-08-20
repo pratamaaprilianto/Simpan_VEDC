@@ -3,10 +3,7 @@ package com.example.simpan.detail
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
-import android.widget.Spinner
-import android.widget.TextView
+import android.widget.*
 import com.example.simpan.R
 
 class UangMakanActivity : AppCompatActivity() {
@@ -15,6 +12,12 @@ class UangMakanActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_uang_makan)
+
+        val button_kembali = findViewById<Button>(R.id.bt_kembaliuangmakan)
+        button_kembali.setOnClickListener{
+            onBackPressed()
+        }
+
         var tahun_selected : String
         var bulan_selected : String
 

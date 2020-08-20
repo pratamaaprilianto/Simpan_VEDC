@@ -3,6 +3,7 @@ package com.example.simpan.detail
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.simpan.R
 import com.example.simpan.adapter.adapter
@@ -17,6 +18,11 @@ class RekapPenugasanActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_rekap_penugasan)
+
+        val button_kembali = findViewById<Button>(R.id.bt_kembalirekap)
+        button_kembali.setOnClickListener{
+            onBackPressed()
+        }
 
         val listModell = listOf<model_rekap>(
             model_rekap(no_rekap = "01215/B17.2/KP/2020", ket_rekap = "Dinas Luar", tgl_rekap = "17 sd 18/01/2020", laporan_rekap = "Laporan : Sudah"),

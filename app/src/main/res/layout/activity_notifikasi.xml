@@ -15,7 +15,7 @@
         android:layout_height="100dp"
         android:background="@color/blue">
     <Button
-        android:id="@+id/bt_kembali"
+        android:id="@+id/bt_kembalibio"
         android:background="@drawable/ic_back"
         android:layout_width="40dp"
         android:layout_height="40dp"

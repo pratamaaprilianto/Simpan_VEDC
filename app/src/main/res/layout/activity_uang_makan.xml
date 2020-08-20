@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/bt_kembali"
+        android:id="@+id/bt_kembaliuangmakan"
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:layout_marginTop="32dp"
@@ -27,20 +27,20 @@
         app:layout_constraintTop_toTopOf="@+id/imageView4" />
 
     <TextView
-
         android:id="@+id/textViewuangmakan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:layout_marginBottom="20dp"
         android:fontFamily="@font/segoeuib"
         android:text="Info Uang Makan"
         android:textColor="@color/white"
         android:textSize="24dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintHorizontal_bias="0.134"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/bt_kembali"
+        app:layout_constraintTop_toBottomOf="@+id/bt_kembalibio"
         app:layout_constraintVertical_bias="0.89" />
 
     <TextView
@@ -76,20 +76,18 @@
 
     <Spinner
         android:id="@+id/spin_tahunuangmakan"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_width="160dp"
+        android:layout_height="22dp"
         app:layout_constraintEnd_toEndOf="@+id/spin_bulanuangmakan"
-        app:layout_constraintTop_toBottomOf="@+id/spin_bulanuangmakan" />
+        app:layout_constraintTop_toTopOf="@+id/textView13" />
 
     <Spinner
         android:id="@+id/spin_bulanuangmakan"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_width="160dp"
+        android:layout_height="22dp"
         android:layout_marginEnd="50dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_uangmakan"
@@ -197,7 +195,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toEndOf="@+id/textView26"
-                app:layout_constraintTop_toBottomOf="@+id/tv_uangmakan"></ImageView>
+                app:layout_constraintTop_toBottomOf="@+id/tv_uangmakan"/>
 
             <ImageView
                 android:id="@+id/iv_hari"
@@ -208,7 +206,7 @@
                 app:layout_constraintEnd_toEndOf="@+id/iv_totalkehadiran"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toEndOf="@+id/textView27"
-                app:layout_constraintTop_toBottomOf="@+id/iv_totalkehadiran"></ImageView>
+                app:layout_constraintTop_toBottomOf="@+id/iv_totalkehadiran"/>
 
             <ImageView
                 android:id="@+id/iv_pajak"
@@ -219,7 +217,7 @@
                 app:layout_constraintEnd_toEndOf="@+id/iv_hari"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toEndOf="@+id/textView244"
-                app:layout_constraintTop_toBottomOf="@+id/iv_hari"></ImageView>
+                app:layout_constraintTop_toBottomOf="@+id/iv_hari"/>
 
 
             <ImageView
@@ -231,7 +229,7 @@
                 app:layout_constraintEnd_toEndOf="@+id/iv_pajak"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toEndOf="@+id/textView24s4"
-                app:layout_constraintTop_toBottomOf="@+id/iv_pajak"></ImageView>
+                app:layout_constraintTop_toBottomOf="@+id/iv_pajak"/>
 
 
             <TextView

@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/bt_kembali"
+        android:id="@+id/bt_kembalitunkin"
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:layout_marginTop="32dp"
@@ -32,15 +32,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:layout_marginBottom="20dp"
         android:fontFamily="@font/segoeuib"
         android:text="Info Tunjangan Kerja"
         android:textColor="@color/white"
         android:textSize="24dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintHorizontal_bias="0.166"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/bt_kembali"
+        app:layout_constraintTop_toBottomOf="@+id/bt_kembalibio"
         app:layout_constraintVertical_bias="0.89" />
 
     <TextView
