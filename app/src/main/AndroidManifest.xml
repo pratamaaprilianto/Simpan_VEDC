@@ -10,11 +10,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".detail.DetailJamKerjaActivity"></activity>
+
+        <activity android:name=".detail.DetailJamActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".detail.Pp53DisiplinPnsActivity"
+            tools:ignore="LockedOrientationActivity">
+        </activity>
+
         <activity
             android:name=".NotifikasiActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:parentActivityName=".FragmentBeranda"
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".detail.Pp53DisiplinPnsActivity"

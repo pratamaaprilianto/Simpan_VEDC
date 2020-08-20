@@ -11,12 +11,12 @@ class BiodataActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_biodata)
 
+
         val button_kembali = findViewById<Button>(R.id.bt_kembalibio)
 
         button_kembali.setOnClickListener{
             onBackPressed()
         }
-
 
     }
 }

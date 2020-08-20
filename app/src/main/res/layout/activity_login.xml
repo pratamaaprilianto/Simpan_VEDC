@@ -37,7 +37,7 @@
                 android:ems="5"
                 android:textColor="@color/blue"
                 android:textColorHint="@color/blue"
-                android:inputType="text"
+                android:inputType="numberSigned"
                 android:hint="Masukkan NIP"/>
         </com.google.android.material.textfield.TextInputLayout>
 

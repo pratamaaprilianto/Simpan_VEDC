@@ -6,138 +6,294 @@
     android:layout_height="match_parent"
     tools:context=".detail.Pp53DisiplinPnsActivity">
 
-        <LinearLayout
+        <ImageView
+            android:id="@+id/imageView4"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="230dp"
-                    android:background="@drawable/b_atasinfo"
-                    android:orientation="vertical"
-                    android:paddingLeft="20dp"
-                    android:paddingTop="25dp">
+            android:layout_height="230dp"
+            android:background="@drawable/b_atasinfo"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-                        <Button
-                            android:id="@+id/bt_kembaliuangmakan"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:background="@drawable/ic_back"></Button>
+        <Button
+            android:id="@+id/bt_kembalipp53"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/ic_back"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintHorizontal_bias="0.077"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/segoeuib"
+        android:text="PP-53 Kurang Jam Kerja"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/bt_kembalipp53"
+        app:layout_constraintVertical_bias="0.89" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/segoeuib"
+            android:text="Pilih Bulan"
+            android:textColor="@color/blue"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toStartOf="@+id/spin_bulanpp53"
+            app:layout_constraintHorizontal_bias="0.068"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/segoeuib"
+            android:text="Pilih Tahun"
+            android:textColor="@color/blue"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toStartOf="@+id/spin_tahuninfotunjangan"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <Spinner
+            android:id="@+id/spin_tahunpp53"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:entries="@array/tahun"
+            app:layout_constraintEnd_toEndOf="@+id/spin_bulanpp53"
+            app:layout_constraintTop_toBottomOf="@+id/spin_bulanpp53" />
+
+        <Spinner
+            android:id="@+id/spin_bulanpp53"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="50dp"
+            android:entries="@array/bulan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_jml_terlambat"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="26dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spin_tahunpp53">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_cardview2">
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:id="@+id/jml_terlambat"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:fontFamily="@font/segoeui"
+                            android:text="Jumlah Terlambat"
+                            android:textColor="@color/blue"
+                            android:textSize="13dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="100dp"
+                            android:layout_height="27dp"
+                            android:layout_marginEnd="20dp"
+                            android:src="@drawable/image_keterangan"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toEndOf="@+id/jml_terlambat"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_jml_terlambat"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/segoeuib"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="110dp"
-                            android:text="PP 53 Kurang Jam Kerja"
+                            android:text="00:28:29"
                             android:textColor="@color/white"
-                            android:textSize="24dp"></TextView>
-                </LinearLayout>
-        </LinearLayout>
+                            android:textSize="11dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/imageView1"
+                            app:layout_constraintHorizontal_bias="0.55"
+                            app:layout_constraintStart_toStartOf="@+id/imageView1"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_jml_psw"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="40dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="26dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_jml_terlambat">
 
-                <LinearLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="235dp"></LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_cardview2">
 
                         <TextView
-                            android:layout_width="200dp"
-                            android:layout_height="match_parent"
-                            android:fontFamily="@font/segoeuib"
-                            android:paddingLeft="60dp"
-                            android:paddingTop="20dp"
-                            android:text="Pilih Bulan"
+                            android:id="@+id/jml_psw"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:fontFamily="@font/segoeui"
+                            android:text="Jumlah PSW"
                             android:textColor="@color/blue"
-                            android:textSize="20dp"></TextView>
+                            android:textSize="13dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                        <Spinner
-                            android:id="@+id/spin_bulanrekap"
-                            android:layout_width="190dp"
-                            android:layout_height="50dp"
-                            android:entries="@array/bulan"
-                            android:paddingTop="25dp"></Spinner>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="100dp"
+                            android:layout_height="27dp"
+                            android:layout_marginEnd="20dp"
+                            android:src="@drawable/image_keterangan"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toEndOf="@+id/jml_psw"
+                            app:layout_constraintTop_toTopOf="parent" />
 
                         <TextView
-                            android:layout_width="200dp"
-                            android:layout_height="match_parent"
+                            android:id="@+id/tv_jml_psw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:fontFamily="@font/segoeuib"
-                            android:paddingLeft="60dp"
-                            android:paddingTop="20dp"
-                            android:text="Pilih Tahun"
-                            android:textColor="@color/blue"
-                            android:textSize="20dp"></TextView>
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="11dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                            app:layout_constraintHorizontal_bias="0.51"
+                            app:layout_constraintStart_toStartOf="@+id/imageView2"
+                            app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
-                        <Spinner
-                            android:id="@+id/spin_tahunrekap"
-                            android:layout_width="190dp"
-                            android:layout_height="60dp"
-                            android:entries="@array/tahun"
-                            android:paddingTop="25dp"></Spinner>
-                </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
 
-                <LinearLayout
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_total_kurang_jam"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="26dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_jml_psw">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    android:paddingTop="20dp">
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_cardview2">
 
-                        <LinearLayout
-                            android:layout_width="400dp"
-                            android:layout_height="160dp"
-                            android:background="@drawable/info_pp53kurangjam"
-                            android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/total"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:fontFamily="@font/segoeui"
+                            android:text="Total kurang jam kerja"
+                            android:textColor="@color/blue"
+                            android:textSize="13dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                                <TextView
-                                    android:id="@+id/tv_jumlahterlambat"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="@font/segoeuib"
-                                    android:paddingLeft="300dp"
-                                    android:paddingTop="15dp"
-                                    android:text="00:28:29"
-                                    android:textColor="@color/white"></TextView>
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="100dp"
+                            android:layout_height="27dp"
+                            android:layout_marginEnd="20dp"
+                            android:src="@drawable/image_keterangan"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toEndOf="@+id/total"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                                <TextView
-                                    android:id="@+id/tv_jumlahpsw"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="@font/segoeuib"
-                                    android:paddingLeft="300dp"
-                                    android:paddingTop="25dp"
-                                    android:text="00:28:29"
-                                    android:textColor="@color/white"></TextView>
+                        <TextView
+                            android:id="@+id/tv_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeuib"
+                            android:text="40"
+                            android:textColor="@color/white"
+                            android:textSize="11dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+                            app:layout_constraintHorizontal_bias="0.511"
+                            app:layout_constraintStart_toStartOf="@+id/imageView3"
+                            app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
-                                <TextView
-                                    android:id="@+id/tv_toalkurangjam"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="@font/segoeuib"
-                                    android:paddingLeft="315dp"
-                                    android:paddingTop="27dp"
-                                    android:text="40"
-                                    android:textColor="@color/white"></TextView>
-                        </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
 
-                </LinearLayout>
+        <Button
+            android:id="@+id/btn_detailjam"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="26dp"
+            android:background="@drawable/bg_button_blue"
+            android:text="Detail"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_total_kurang_jam">
+        </Button>
 
-        </LinearLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
