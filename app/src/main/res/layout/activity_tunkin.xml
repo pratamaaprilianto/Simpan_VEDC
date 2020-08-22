@@ -50,13 +50,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="28dp"
-        android:layout_marginEnd="32dp"
         android:fontFamily="@font/segoeuib"
         android:text="Pilih Bulan"
         android:textColor="@color/blue"
         android:textSize="17dp"
-        app:layout_constraintEnd_toStartOf="@+id/spin_bulaninfotunjangan"
-        app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
@@ -69,8 +66,6 @@
         android:text="Pilih Tahun"
         android:textColor="@color/blue"
         android:textSize="17dp"
-        app:layout_constraintEnd_toStartOf="@+id/spin_tahuninfotunjangan"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView10"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
@@ -87,9 +82,12 @@
         android:id="@+id/spin_bulaninfotunjangan"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginEnd="50dp"
         android:entries="@array/bulan"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
         app:layout_constraintTop_toTopOf="@+id/textView10" />
 
     <androidx.cardview.widget.CardView

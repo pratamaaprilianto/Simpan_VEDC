@@ -27,19 +27,19 @@ class LogKehadiranActivity : AppCompatActivity() {
         val listModel = listOf<model_logkehadiran>(
             model_logkehadiran(tanggal = "01/01/2020",jenis = "M",hari="Senin",datang = "07.43.45",
                 late = "00.12.45",pulang = "15.57.63", psw = "-", potongan = "-", tolate = "-", status = "Tidak ganti jam"),
-            model_logkehadiran(tanggal = "01/01/2020",jenis = "L",hari="Senin",datang = "07.43.45",
+            model_logkehadiran(tanggal = "02/01/2020",jenis = "L",hari="Selasa",datang = "07.43.45",
                 late = "00.12.45",pulang = "15.57.63", psw = "-", potongan = "-", tolate = "-", status = "Ganti jam"),
-            model_logkehadiran(tanggal = "01/01/2020",jenis = "M",hari="Senin",datang = "07.43.45",
+            model_logkehadiran(tanggal = "03/01/2020",jenis = "M",hari="Rabu",datang = "07.43.45",
                 late = "00.12.45",pulang = "15.57.63", psw = "-", potongan = "-", tolate = "-", status = "Ganti jam"),
-            model_logkehadiran(tanggal = "01/01/2020",jenis = "L",hari="Senin",datang = "07.43.45",
+            model_logkehadiran(tanggal = "04/01/2020",jenis = "L",hari="Kamis",datang = "07.43.45",
                 late = "00.12.45",pulang = "15.57.63", psw = "-", potongan = "-", tolate = "-", status = "Tidak ganti jam"),
-            model_logkehadiran(tanggal = "01/01/2020",jenis = "M",hari="Senin",datang = "07.43.45",
+            model_logkehadiran(tanggal = "05/01/2020",jenis = "M",hari="Jumat",datang = "07.43.45",
                 late = "00.12.45",pulang = "15.57.63", psw = "-", potongan = "-", tolate = "-", status = "Tidak ganti jam"),
-            model_logkehadiran(tanggal = "01/01/2020",jenis = "L",hari="Senin",datang = "07.43.45",
+            model_logkehadiran(tanggal = "08/01/2020",jenis = "L",hari="Senin",datang = "07.43.45",
                 late = "00.12.45",pulang = "15.57.63", psw = "-", potongan = "-", tolate = "-", status = "Ganti jam"),
-            model_logkehadiran(tanggal = "01/01/2020",jenis = "M",hari="Senin",datang = "07.43.45",
+            model_logkehadiran(tanggal = "09/01/2020",jenis = "M",hari="Selasa",datang = "07.43.45",
                 late = "00.12.45",pulang = "15.57.63", psw = "-", potongan = "-", tolate = "-", status = "Ganti jam"),
-            model_logkehadiran(tanggal = "01/01/2020",jenis = "L",hari="Senin",datang = "07.43.45",
+            model_logkehadiran(tanggal = "10/01/2020",jenis = "L",hari="Rabu",datang = "07.43.45",
                 late = "00.12.45",pulang = "15.57.63", psw = "-", potongan = "-", tolate = "-", status = "Tidak ganti jam")
         )
 
