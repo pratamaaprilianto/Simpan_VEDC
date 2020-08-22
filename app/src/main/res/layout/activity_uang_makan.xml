@@ -78,7 +78,7 @@
         android:id="@+id/spin_tahunuangmakan"
         android:layout_width="160dp"
         android:layout_height="22dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="27dp"
         android:entries="@array/tahun"
         app:layout_constraintEnd_toEndOf="@+id/spin_bulanuangmakan"
         app:layout_constraintTop_toBottomOf="@+id/spin_bulanuangmakan" />
@@ -87,6 +87,7 @@
         android:id="@+id/spin_bulanuangmakan"
         android:layout_width="160dp"
         android:layout_height="22dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="50dp"
         android:entries="@array/bulan"
         app:layout_constraintEnd_toEndOf="parent"
