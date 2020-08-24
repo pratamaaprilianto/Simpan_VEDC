@@ -36,6 +36,12 @@ class adapterLogKehadiran(val items: List<model_logkehadiran>): RecyclerView.Ada
             itemView.potongan.setText(data.potongan)
             itemView.tolate.setText(data.tolate)
             itemView.status.setText(data.status)
+            var cekStatus = itemView.status.text
+            if(cekStatus.equals("Tidak ganti jam")){
+                itemView.imageView99d.setImageResource(R.drawable.lk_statuss)
+            }else{
+                itemView.imageView99d.setImageResource(R.drawable.lk_status)
+            }
         }
     }
 
